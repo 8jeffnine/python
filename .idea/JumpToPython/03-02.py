@@ -87,8 +87,21 @@ print(b)
 
 # exercise 4
 # while문을 이용하여 아래와 같이 별(*)을 표시하는 프로그램을 작성해 보자.
-
+a=1
+while a < 5:
+    b=""
+    while len(b) < a:
+        b = b+"*"
+    print(b)
+    a = a + 1
 
 
 # exercise 5
 # while문을 이용하여 아래와 같이 별(*)을 표시하는 프로그램을 작성해 보자.
+a=['*','*','*','*','*','*','*']
+b=1
+while b <= 4:
+    print("".join(a[:]))
+    a[b-1] = ' '
+    a[-b] = ' '
+    b = b + 1
